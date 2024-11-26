@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Web de Juegos</title>
+    <title>Portal de Juegos</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Bienvenido a Mi Web de Juegos</h1>
+        <h1>Bienvenidos al Portal de Juegos</h1>
         <nav>
             <ul>
                 <li><a href="#juegos">Juegos</a></li>
@@ -16,39 +16,41 @@
             </ul>
         </nav>
     </header>
-    
+
     <main>
         <section id="juegos">
-            <h2>Juegos Disponibles</h2>
-            <div class="juego" onclick="iniciarJuego('Juego1')">
-                <h3>Classroom x6</h3>
-                <p>https://classroom-6x.lol/ 1.</p>
+            <h2>Juegos Destacados</h2>
+            <div class="juego">
+                <h3>Juego 1</h3>
+                <p>Descripción del juego 1.</p>
+                <button onclick="alert('¡Disfruta el juego 1!')">Jugar</button>
             </div>
-            <div class="juego" onclick="iniciarJuego('Juego2')">
+            <div class="juego">
                 <h3>Juego 2</h3>
-                <p>Descripción del Juego 2.</p>
+                <p>Descripción del juego 2.</p>
+                <button onclick="alert('¡Disfruta el juego 2!')">Jugar</button>
+            </div>
+            <div class="juego">
+                <h3>Juego 3</h3>
+                <p>Descripción del juego 3.</p>
+                <button onclick="alert('¡Disfruta el juego 3!')">Jugar</button>
             </div>
         </section>
 
         <section id="contacto">
             <h2>Contacto</h2>
-            <form id="formularioContacto">
+            <form>
                 <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" required>
-                
+                <input type="text" id="nombre" name="nombre" required>
                 <label for="email">Email:</label>
-                <input type="email" id="email" required>
-                
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" required></textarea>
-                
+                <input type="email" id="email" name="email" required>
                 <button type="submit">Enviar</button>
             </form>
         </section>
     </main>
 
     <footer>
-        <p>© 2023 Mi Web de Juegos. Todos los derechos reservados.</p>
+        <p>&copy; 2023 Portal de Juegos. Todos los derechos reservados.</p>
     </footer>
 
     <script src="script.js"></script>
