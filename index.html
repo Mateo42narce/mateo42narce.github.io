@@ -1,65 +1,56 @@
- ```html <!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="es">
 <head>
-<title>Página Rara, No entres</title>
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0; 
-        background-color: #f0f0f0;
-}
-.container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-}
-header {
-    background: #50b3a2;
-    color: white;
-    padding-top: 30px;
-    min-height: 70px;
-    border-bottom: #e8491d 3px solid;
-}
-header a {
-    color: #ffffff;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 16px;
-} 
-header ul{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    li {
-        display: inline;
-        padding: 0 20px 0 20px;
-    } 
-  } 
-</style> 
-</head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Web de Juegos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
 <body>
-<header>
-<div class="container">  
-<h1>Juegos Gratis</h1> 
-<ul>
-<li><a href="#">Minecraft=https://sites.google.com/site/classroom6x/minecraft-1-5-2</a></li>
-<li><a href="#">Just Fall=https://justfall.lol/</a></li>
-<li><a href="#">1vs1.LOL=https://1v1.school/#</a></li> 
-</ul>
-</div>
-</header>
-<div class="container">
-<!--juegos en clase -->
-</div>
-</body> 
- <a href="https://sites.google.com/site/classroom6x/minecraft-1-5-2" target="https://sites.google.com/site/classroom6x/minecraft-1-5-2">Minecraft</a>
-<hr>
- <a href="https://justfall.lol/" target="https://justfall.lol/">Just Fall</a>
-<hr>
- <a href="https://tboi.com/" target="https://tboi.com/">WIKI tboi</a>
-<hr>
- <a href="https://1v1.school/#" target="https://1v1.school/#"1vs1 LOL</a>
-<hr>
- <a href="https://cochecitosmanuel.github.io/main.html"https://cochecitosmanuel.github.io/main.html"Web Manu</a>
- </html>
+    <header>
+        <h1>Bienvenido a Mi Web de Juegos</h1>
+        <nav>
+            <ul>
+                <li><a href="#juegos">Juegos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="juegos">
+            <h2>Juegos Disponibles</h2>
+            <div class="juego" onclick="iniciarJuego('Juego1')">
+                <h3>Juego 1</h3>
+                <p>Descripción del Juego 1.</p>
+            </div>
+            <div class="juego" onclick="iniciarJuego('Juego2')">
+                <h3>Juego 2</h3>
+                <p>Descripción del Juego 2.</p>
+            </div>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form id="formularioContacto">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" required></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2023 Mi Web de Juegos. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
